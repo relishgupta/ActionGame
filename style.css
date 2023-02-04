@@ -68,7 +68,7 @@ body{
     animation: dino 0.6s linear;
 }
 .obstacleAni{
-    animation: obstacleAni 5s linear infinite;
+    animation: obstacleAni 5s linear infinite ;
 }
 @keyframes dino{
     0%{
