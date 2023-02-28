@@ -17,12 +17,19 @@ document.onkeydown=function(e){
     if(e.keyCode=='39'){
         dino=document.querySelector('.dino');
         dinoX=parseInt(window.getComputedStyle(dino,null).getPropertyValue('left'));
-        dino.style.left=dinoX+112+"px";
+        sysWidth = window.innerWidth;
+        if(dinoX < sysWidth){
+            dino.style.left=dinoX+112+"px";
+        }else{
+            dino.style.left=0+"px";
+        }
     }
     if(e.keyCode=='37'){
         dino=document.querySelector('.dino');
         dinoX=parseInt(window.getComputedStyle(dino,null).getPropertyValue('left'));
-        dino.style.left=(dinoX-112)+"px";
+        if(dinoX > 52){
+            dino.style.left=(dinoX-112)+"px";
+        }
     }
 }
 
