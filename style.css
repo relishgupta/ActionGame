@@ -89,3 +89,9 @@ body{
         left:-10vw;
     }
 }
+
+@media screen and (min-width:1800px) {
+    .inst{
+        margin-left: 1652px;
+    }
+}
